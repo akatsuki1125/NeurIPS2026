@@ -1,0 +1,15 @@
+[project]
+name = "neurips2026"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.98.1",
+    "google-genai>=1.75.0",
+    "openai>=2.34.0",
+    "pydantic>=2.13.3",
+    "python-dotenv>=1.2.2",
+    "requests>=2.33.1",
+    "tqdm>=4.67.3",
+]

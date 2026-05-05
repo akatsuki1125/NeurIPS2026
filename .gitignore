@@ -1,0 +1,8 @@
+__pycache__
+.venv
+work
+data
+log
+runs
+configs
+.env
