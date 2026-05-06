@@ -6,3 +6,4 @@ log
 runs
 configs
 .env
+.DS_Store
