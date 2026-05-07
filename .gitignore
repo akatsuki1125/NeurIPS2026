@@ -4,6 +4,9 @@ work
 data
 log
 runs
-configs
+gcs
 .env
 .DS_Store
+source_images
+target_images
+visual_instructions

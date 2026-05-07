@@ -1,7 +1,7 @@
 [project]
 name = "neurips2026"
 version = "0.1.0"
-description = "Add your description here"
+description = "Benchmark and evaluation pipeline for NeurIPS 2026 submission"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

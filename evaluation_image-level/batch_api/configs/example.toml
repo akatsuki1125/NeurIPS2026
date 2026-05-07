@@ -1,0 +1,17 @@
+[metadata_fields]
+key = "key"
+org_image_path = "org_image_path"
+visual_instruction_image_path = "visual_instruction_image_path"
+org_tikz_code_path = "org_tikz_code_path"
+edited_image_paths = "edited_image_paths"
+
+[[configs]]
+name = "image_eval_anthropic"
+judge_provider = "anthropic"   # openai / google / anthropic
+judge_model = "claude-opus-4-6"
+judge_input_type = "w_org_image"   # w_org_image / w_org_tikz / w_org_image_w_org_tikz (基本はw_org_image)
+edited_model_type = "gpt-5.4-mini"
+edited_input_type = "w_org_image_w_org_tikz" # （基本はw_org_image_w_org_tikz）
+metadata_path = "data/image_metadata.jsonl"
+save_path = "evaluation_image-level/batch_api/runs/{name}/input.jsonl"
+append = false

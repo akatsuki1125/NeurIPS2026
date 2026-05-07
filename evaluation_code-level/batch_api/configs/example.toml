@@ -1,0 +1,14 @@
+[metadata_fields]
+key = "key"
+org_tikz_code_path = "org_tikz_code_path"
+
+[[configs]]
+name = "gpt-5.4-mini_code_eval_claude-opus-4-6"
+judge_provider = "anthropic"   # openai / google / anthropic
+judge_model = "claude-opus-4-6"
+# generated code selection (used when metadata has edited_tikz_code_paths)
+edited_model_type = "gpt-5.4-mini"
+edited_input_type = "w_org_image_w_org_tikz"
+metadata_path = "data/code_metadata.jsonl"
+save_path = "evaluation_code-level/batch_api/runs/{name}/input.jsonl"
+append = false

@@ -20,7 +20,7 @@ def add_common_batch_args(parser: argparse.ArgumentParser) -> None:
 
 
 def handle_code_batch(args: argparse.Namespace) -> None:
-    base = REPO_ROOT / "evaluation_code-based" / "batch_api" / "steps"
+    base = REPO_ROOT / "evaluation_code-level" / "batch_api" / "steps"
     if args.mode in ("generate", "pipeline"):
         step_args = ["--config", args.config]
         if args.config_name:
@@ -61,7 +61,7 @@ def handle_code_batch(args: argparse.Namespace) -> None:
 
 
 def handle_image_batch(args: argparse.Namespace) -> None:
-    base = REPO_ROOT / "evaluation_image-based" / "batch_api" / "steps"
+    base = REPO_ROOT / "evaluation_image-level" / "batch_api" / "steps"
     if args.mode in ("generate", "pipeline"):
         step_args = ["--config", args.config]
         if args.config_name:
@@ -102,7 +102,7 @@ def handle_image_batch(args: argparse.Namespace) -> None:
 
 
 def handle_image_vllm(args: argparse.Namespace) -> None:
-    script = REPO_ROOT / "evaluation_image-based" / "vllm" / "run_vllm_evaluation.py"
+    script = REPO_ROOT / "evaluation_image-level" / "vllm" / "run_vllm_evaluation.py"
     step_args = [
         "--input_path", args.input_path,
         "--output_path", args.output_path,
@@ -126,7 +126,7 @@ def handle_image_vllm(args: argparse.Namespace) -> None:
 
 
 def handle_image_openrouter(args: argparse.Namespace) -> None:
-    script = REPO_ROOT / "evaluation_image-based" / "openrouter" / "evaluate.py"
+    script = REPO_ROOT / "evaluation_image-level" / "openrouter" / "evaluate.py"
     step_args = [
         "--output", args.output,
         "--metadata-path", args.metadata_path,
